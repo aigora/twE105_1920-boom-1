@@ -4,7 +4,7 @@ La idea del trabajo es simular el programa de televisión denominado "BOOM!". Te
 
 ## Integrantes del equipo
 
-Oscar Arrigo Rodriguez (54917) Usuario: oscararrigo\n
+Oscar Arrigo Rodriguez (54917) Usuario: oscararrigo \\\
 Hector del Saz Saiz (54558) Usuario: hectordelsaz
 
 ## Objetivos del trabajo
