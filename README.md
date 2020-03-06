@@ -1,11 +1,12 @@
-# Título del trabajo
+# BOOM!!
 
-Descripción breve del proyecto a realizar (2-3 frases).
+La idea del trabajo es simular el programa de televisión denominado "BOOM!". Tendrá dos modalidades de juego, una individual y otra multijugador. Además dentro de cada modalidad tendrá diferentes fases en el juego de preguntas y respuestas.
 
 ## Integrantes del equipo
 
-Nombres, apellidos, y usuario GitHub de los integrantes del equipo.
+Oscar Arrigo Rodriguez (54917) Usuario: oscararrigo
+Hector del Saz Saiz (54558) Usuario: hectordelsaz
 
 ## Objetivos del trabajo
 
-Lista de los objetivos que se persiguen con el trabajo propuesto.
+Aplicar los conocimientos aprendidos en la asignatura, a la vez que crear un programa divertido y dinámico para poder jugar nosotros mismos.
