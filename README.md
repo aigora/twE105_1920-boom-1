@@ -10,3 +10,5 @@ Hector del Saz Saiz (54558) Usuario: hectordelsaz
 ## Objetivos del trabajo
 
 Aplicar los conocimientos aprendidos en la asignatura, a la vez que crear un programa divertido y dinámico para poder jugar nosotros mismos.
+Desarrollar nuestras capacidades de programar y experimentar con C, asi como el trabajo en grupo; o en en este caso en pareja.
+Familiarizarnos con la plataforma GitHub.
