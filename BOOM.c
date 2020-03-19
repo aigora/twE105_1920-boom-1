@@ -3,7 +3,7 @@
 int main ()
 {
 printf ("Bienvenido a BOOM!!\n Elige la modalidad a la que deseas jugar teniendo en cuenta que:\n -si pulsas 1 jugaras en modo individual.\n -si pulsas 2 jugaras en modo multijugador.\n");
-char option,name_1,name_2;
+char option,name_1,name_2, prueba;
 scanf ("%c",&option);
 switch (option)
 {
@@ -13,7 +13,7 @@ switch (option)
 	break;
 	
 	
-	
+	// prueba de github//
 	
 	
 	case '2': // CASO MULTIJUGADOR. Se trata de dos grupos, pero dando una única solución por grupo.//
