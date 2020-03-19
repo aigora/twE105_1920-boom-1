@@ -7,9 +7,10 @@ char option,name_1,name_2;
 scanf ("%c",&option);
 switch (option)
 {
-	case '1': // CASO INDIVIDUAL. El juego será de un único jugador, o grupo, dando una única solución//
-	printf ("Has elegido el modo individual. Por favor introduce como te quieres llamar.\n");
+	case '1': // CASO INDIVIDUAL. El juego será de un único jugador, o grupo, dando una única solución.//
 	scanf ("%c", &name_1);
+	printf ("Has elegido el modo individual. Por favor introduce como te quieres llamar.\n");
+	
 	break;
 	
 	
