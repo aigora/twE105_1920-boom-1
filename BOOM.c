@@ -1,4 +1,8 @@
 #include <stdio.h>
+#include <windows.h>
+
+int temporizador1 ();
+int faseinicial ();
 
 int main ()
 {
@@ -13,10 +17,14 @@ int main ()
 			switch (option)
 			{
 				case '1': // CASO INDIVIDUAL. El juego será de un único jugador, o grupo, dando una única solución//
-			
+					system("cls");
 					printf ("Has elegido el modo individual, escribe tu nombre.\n");
 					scanf ("%s", &name_1);
-						printf (" PRIMERA PARTE DEL JUEGO:\nINSTRUCCIONES: %s corta el cable de todas las respuestas exceto de la que creas que es la correcta.\n ", name_1);
+						printf (" PRIMERA PARTE DEL JUEGO\nINSTRUCCIONES: %s corta el cable de todas las respuestas exceto de la que creas que es la correcta.\n ", name_1);
+						
+							system("cls");
+						
+						faseinicial ();
 	
 						printf ( "BOMBA BONUS:\nINSTRUCCIONES: %s elije un tema teniendo en cuenta que:\n.1 pertenece a DEPORTES.\n.2 pertenece a HISTORIA\n.3 iremos incluyendo mas.\n Posteriormente, selecciona las 5 respuestas correctas.\n", name_1);
 
@@ -55,8 +63,13 @@ int main ()
 						printf ("Ahora introduce el nombre del jugador 2.\n");
 						scanf ("%s", &name_2 );
 							printf (" PRIMERA PARTE DEL JUEGO PARA EL JUGADOR 1:\nINSTRUCCIONES: %s corta el cable de todas las respuestas excepto de la que creas que es la correcta.\n ", name_1);
-							printf (" PRIMERA PARTE DEL JUEGO PARA EL JUGADOR 1:\nINSTRUCCIONES: %s corta el cable de todas las respuestas excepto de la que creas que es la correcta.\n ", name_2);
-	
+							
+							faseinicial();
+							
+							printf (" PRIMERA PARTE DEL JUEGO PARA EL JUGADOR 2:\nINSTRUCCIONES: %s corta el cable de todas las respuestas excepto de la que creas que es la correcta.\n ", name_2);
+							
+							faseinicial();
+							
 							printf ( "BOMBA BONUS PARA JUGADOR 1:\nINSTRUCCIONES: %s elije un tema teniendo en cuenta que:\n.1 pertenece a DEPORTES.\n.2 pertenece a HISTORIA\n.3 iremos incluyendo mas.\n Posteriormente, selecciona las 5 respuestas correctas.\n", name_1);
 			
 								do
@@ -129,7 +142,7 @@ int main ()
 														printf("BOMBA PARA EL BOTE.\n");//como he dicho solo la jugará el que más dinero haya conseguido hasta la bomba anterior.Consistirá en contestar 10 preguntas a lo largo de 2 minutos//
 	
 				default:
-					printf ("HASTA PRONTO.\n");
+					printf ("Hasta pronto.\n");
 					break;
 		}	
 
@@ -137,3 +150,68 @@ int main ()
 return 0;
 }
 
+
+
+
+
+int temporizador1 (){
+	
+	int tiempo;
+	
+	printf("Dispone de 1 minuto.\n\n");
+    
+	for(tiempo=0; tiempo<10; tiempo++){
+        Sleep(1000);
+        printf ("%02i\r",tiempo+1);
+    }
+
+    printf("Se acabo el tiempo\n\n");
+	
+	return 0;
+}
+
+
+int faseinicial (){
+	
+	
+printf ("FASE INICIAL\n");
+		
+	printf ("Primera bomba\n");
+		
+		printf("Juegas por 300 euros\n");
+						
+			temporizador1 ();
+						
+			system("pause");
+			system("cls");
+						
+	printf("Segunda bomba\n");
+		
+		printf("Juegas por 400 euros\n");
+						
+			temporizador1 ();
+						
+			system("pause");
+			system("cls");
+						
+	printf("Tercera bomba\n");
+		
+		printf("Juegas por 500 euros\n");
+						
+			temporizador1 ();
+						
+			system("pause");
+			system("cls");
+						
+	printf("Cuarta bomba\n");
+		
+		printf("Juegas por 600 euros\n");
+							
+			temporizador1 ();
+							
+			system("pause");
+			system("cls");
+	
+
+return 0;
+}
