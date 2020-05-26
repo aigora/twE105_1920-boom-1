@@ -5,6 +5,7 @@ int temporizador1 ();
 int faseinicial ();
 int PyR1 ();
 int PyR34 ();
+int PyRfinal ();
 
 int main ()
 {
@@ -12,6 +13,7 @@ int main ()
 	
 	char option,name_1[20],name_2[20],dinero_1,dinero_2;
     int tema;
+    int t;
     
 		printf ("Bienvenido a BOOM!!\n Elige la modalidad a la que deseas jugar teniendo en cuenta que:\n -si pulsas 1 jugaras en modo individual.\n -si pulsas 2 jugaras en modo multijugador.\n -pulsa cualquier otra tecla para salir del juego\n");
 		scanf ("%c", &option);
@@ -30,6 +32,11 @@ int main ()
 	
 					
 						printf ("BOMBA FINAL.\n"); //Consiste en contestar durante un minuto(sin contar si se ha conseguido bonus) preguntas de dos opciones. Cada acierto será un +300, cada error -100//
+						
+						for(t=0;t<=9;t++){
+							PyRfinal ();
+						}
+						
 						printf ( "BOMBA PARA EL BOTE\n");
 							break;
 	
@@ -528,6 +535,212 @@ if (rline == 16){
 				s=2;
 	}
 }
+
+//printf("\n%i",s);
+
+
+
+getchar();
+	return (s);
+}
+
+
+//////////////
+
+
+
+int PyRfinal (){
+	FILE   *fp5;
+FILE   *fp6;
+char   buf[200];
+int    flines;    /* numero de lineas en el archivo */
+int    rline;     /* la linea aleatoria para leer */
+int    i;
+int    resp;
+int    k;
+int    s;
+ 
+s=0;
+srand(time(NULL));
+if ( ! ( fp5 = fopen("PreguntasBfinal.txt", "r")) )
+   {
+   printf("Error al abrir el archivo\n");
+   }
+ 
+for ( flines = 0 ; fgets(buf, sizeof(buf), fp5) ; ++flines);
+ 
+if ( flines == 0 )
+   {
+   printf("El archivo esta vacio\n");
+   }
+ 
+rline = rand() % (flines);
+ 
+rewind(fp5);
+ 
+for ( i = 0 ; i < rline  ; ++i )
+    fgets(buf, sizeof(buf), fp5);
+printf("%s\n", buf);
+
+//printf("%i",rline);
+
+
+
+//_____________
+
+
+if ( ! ( fp6 = fopen("RespuestasBfinal.txt", "r")) )
+   {
+   printf("\nError al abrir el archivo\n");
+   return(0);
+   }
+   
+for ( i = 0 ; i < rline  ; ++i )
+    fgets(buf, sizeof(buf), fp6);
+printf("%s", buf);
+
+scanf("%i",&resp);
+
+
+if (rline == 1){
+	switch (resp){
+		case 3: printf("Correcto\n");
+				s=1;
+		break;
+		default: printf("Incorrecto\n");
+				s=2;
+	}
+}
+if (rline == 2){
+	switch (resp){
+		case 1: printf("Correcto\n");
+				s=1;
+		break;
+		default: printf("Incorrecto\n");
+				s=2;
+	}
+}
+if (rline == 3){
+	switch (resp){
+		case 1: printf("Correcto\n");
+				s=1;
+		break;
+		default: printf("Incorrecto\n");
+				s=2;
+	
+	}
+}
+if (rline == 4){
+	switch (resp){
+		case 3: printf("Correcto\n");
+				s=1;
+		break;
+		default: printf("incorrecto\n");
+				s=2;
+	}
+}
+if (rline == 5){
+	switch (resp){
+		case 2: printf("Correcto\n");
+				s=1;
+		break;
+		default: printf("Incorrecto\n");
+				s=2;
+	}
+}
+if (rline == 6){
+	switch (resp){
+		case 1: printf("Correcto\n");
+				s=1;
+		break;
+		default: printf("Incorrecto\n");
+				s=2;
+	}
+}
+if (rline == 7){
+	switch (resp){
+		case 4: printf("Correcto\n");
+				s=1;
+		break;
+		default: printf("Incorrecto\n");
+				s=2;
+	}
+}
+if (rline == 8){
+	switch (resp){
+		case 2: printf("Correcto\n");
+				s=1;
+		break;
+		default: printf("Incorrecto\n");
+				s=2;
+	}
+}
+if (rline == 9){
+	switch (resp){
+		case 2: printf("Correcto\n");
+				s=1;
+		break;
+		default: printf("Incorrecto\n");
+				s=2;
+	
+	}
+}
+if (rline == 10){
+	switch (resp){
+		case 4: printf("Correcto\n");
+				s=1;
+		break;
+		default: printf("incorrecto\n");
+				s=2;
+	}
+}
+if (rline == 11){
+	switch (resp){
+		case 1: printf("Correcto\n");
+				s=1;
+		break;
+		default: printf("Incorrecto\n");
+				s=2;
+	}
+}
+if (rline == 12){
+	switch (resp){
+		case 3: printf("Correcto\n");
+				s=1;
+		break;
+		default: printf("Incorrecto\n");
+				s=2;
+	}
+}
+if (rline == 13){
+	switch (resp){
+		case 3: printf("Correcto\n");
+				s=1;
+		break;
+		default: printf("Incorrecto\n");
+				s=2;
+	
+	}
+}
+if (rline == 14){
+	switch (resp){
+		case 2: printf("Correcto\n");
+				s=1;
+		break;
+		default: printf("incorrecto\n");
+				s=2;
+	}
+}
+if (rline == 15){
+	switch (resp){
+		case 2: printf("Correcto\n");
+				s=1;
+		break;
+		default: printf("Incorrecto\n");
+				s=2;
+	}
+}
+
 
 //printf("\n%i",s);
 
