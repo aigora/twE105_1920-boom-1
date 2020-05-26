@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <windows.h>
 
 int temporizador1 ();
 int faseinicial ();
@@ -21,12 +20,11 @@ int main ()
 			switch (option)
 			{
 				case '1': // CASO INDIVIDUAL. El juego será de un único jugador, o grupo, dando una única solución//
-					system("cls");
+					
 					printf ("Has elegido el modo individual, escribe tu nombre.\n");
 					scanf ("%s", &name_1);
 						printf (" PRIMERA PARTE DEL JUEGO\nINSTRUCCIONES: %s corta el cable de todas las respuestas exceto de la que creas que es la correcta.\n ", name_1);
 						
-							system("cls");
 						
 						faseinicial ();
 	
@@ -57,8 +55,16 @@ int main ()
 		
 			
 							printf ("BOMBA FINAL PARA %s\n", name_1);
+							
+							for(t=0;t<=9;t++){
+							PyRfinal ();
+							}
 			
 							printf ("BOMBA FINAL PARA %s\n", name_2);
+							
+							for(t=0;t<=9;t++){
+							PyRfinal ();
+							}
 		
 			
 			
@@ -119,7 +125,7 @@ printf ("FASE INICIAL\n");
 			PyR1 ();
 						
 			system("pause");
-			system("cls");
+			
 						
 	printf("Segunda bomba\n");
 		
@@ -129,7 +135,7 @@ printf ("FASE INICIAL\n");
 			PyR1 ();
 						
 			system("pause");
-			system("cls");
+			
 						
 	printf("Tercera bomba\n");
 		
@@ -139,7 +145,7 @@ printf ("FASE INICIAL\n");
 			PyR34 ();
 						
 			system("pause");
-			system("cls");
+			
 						
 	printf("Cuarta bomba\n");
 		
@@ -149,7 +155,7 @@ printf ("FASE INICIAL\n");
 			PyR34 ();
 							
 			system("pause");
-			system("cls");
+			
 	
 
 return 0;
