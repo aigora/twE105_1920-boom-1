@@ -1,64 +1,16 @@
-Ostion
-Chochin
-Pardillo comun
-Pito negro   
-Hipopotamo
-Oso polar
-Foca
-Leon
-El Duque de Lerma
-Cristobal Colon
-Torquemada
-El Gran Capitan
-Sagasta y Canovas
-Canovas y Espartero
-Narvaez y Martinez Campos
-Rajoy y Zapatero
-1991
-1988
-1993
-1986
-David Cal
-Rafael Nadal
-Mireia Belmonte
-Pau Gasol
-Francoise Barre-Sinoussi
-Jonas Salk
-David Baltimore
-Louis Pasteur
-Camilo Golgi
-Jorge Volpi
-Severo Ochoa
-Con nadie
-Esquimales
-Apaches
-Masaes
-Sherpas
-El traje de Astronauta
-El autogiro
-El teleferico
-Las jeringuillas desechables
-Yo, Julia
-El fuego invisible
-Todo esto te dare
-Pasiones romanas
-Sonata de otono
-La Voluntad
-Amor y pedagogia
-Camino de perfeccion
-Goya
-Fernando del Rincon
-Velazquez
-Juan Pantoja de la Cruz
-Gotico
-Renacentista
-Barroco
-Clasico
-Avion
-Helicoptero
-Avioneta
-Tren
-David Ferrer
-Iniesta
-David de Gea
-Joaquin Reyes
+Ostion(1) Chochin(2) Pardillo comun(3) Pito negro(4)
+Hipopotamo(1) Oso polar(2) Foca(3) Leon(4)
+El Duque de Lerma(1) Cristobal Colon(2) Torquemada(3) El Gran Capitan(4)
+Sagasta y Canovas(1) Canovas y Espartero(2) Narvaez y Martinez Campos(3) Rajoy y Zapatero(4)
+1991(1) 1988(2) 1993(3) 1986(4)
+David Cal(1) Rafael Nadal(2) Mireia Belmonte(3) Pau Gasol(4)
+Francoise Barre-Sinoussi(1) Jonas Salk(2) David Baltimore(3) Louis Pasteur(4)
+Camilo Golgi(1) Jorge Volpi(2) Severo Ochoa(3) Con nadie(4)
+Esquimales(1) Apaches(2) Masaes(3) Sherpas(4)
+El traje de Astronauta(1) El autogiro(2) El teleferico(3) Las jeringuillas desechables(4)
+Yo, Julia(1) El fuego invisible(2) Todo esto te dare(3) Pasiones romanas(4)
+Sonata de otono(1) La Voluntad(2) Amor y pedagogia(3) Camino de perfeccion(4)
+Goya(1) Fernando del Rincon(2) Velazquez(3) Juan Pantoja de la Cruz(4)
+Gotico(1) Renacentista(2) Barroco(3) Clasico(4)
+Avion(1) Helicoptero(2) Avioneta(3) Tren(4)
+David Ferrer(1) Iniesta(2) David de Gea(3) Joaquin Reyes(4)
