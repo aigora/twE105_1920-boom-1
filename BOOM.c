@@ -3,6 +3,7 @@
 
 int temporizador1 ();
 int faseinicial ();
+int PyR1 ();
 
 int main ()
 {
@@ -152,7 +153,7 @@ return 0;
 
 
 
-
+/////////////
 
 int temporizador1 (){
 	
@@ -170,6 +171,7 @@ int temporizador1 (){
 	return 0;
 }
 
+//////////////
 
 int faseinicial (){
 	
@@ -180,7 +182,9 @@ printf ("FASE INICIAL\n");
 		
 		printf("Juegas por 300 euros\n");
 						
-			temporizador1 ();
+			//temporizador1 ();
+			
+			PyR1 ();
 						
 			system("pause");
 			system("cls");
@@ -189,7 +193,8 @@ printf ("FASE INICIAL\n");
 		
 		printf("Juegas por 400 euros\n");
 						
-			temporizador1 ();
+			//temporizador1 ();
+			PyR1 ();
 						
 			system("pause");
 			system("cls");
@@ -198,7 +203,7 @@ printf ("FASE INICIAL\n");
 		
 		printf("Juegas por 500 euros\n");
 						
-			temporizador1 ();
+			//temporizador1 ();
 						
 			system("pause");
 			system("cls");
@@ -207,11 +212,187 @@ printf ("FASE INICIAL\n");
 		
 		printf("Juegas por 600 euros\n");
 							
-			temporizador1 ();
+			//temporizador1 ();
 							
 			system("pause");
 			system("cls");
 	
 
 return 0;
+}
+
+
+//////////////
+
+
+int PyR1 (){
+	FILE   *fp;
+FILE   *fp2;
+char   buf[200];
+int    flines;    /* numero de lineas en el archivo */
+int    rline;     /* la linea aleatoria para leer */
+int    i;
+int    resp;
+int    k;
+int    s;
+ 
+s=0;
+srand(time(NULL));
+if ( ! ( fp = fopen("PreguntasBs1y2.txt", "r")) )
+   {
+   printf("Error al abrir el archivo\n");
+   }
+ 
+for ( flines = 0 ; fgets(buf, sizeof(buf), fp) ; ++flines);
+ 
+if ( flines == 0 )
+   {
+   printf("El archivo esta vacio\n");
+   }
+ 
+rline = rand() % (flines);
+ 
+rewind(fp);
+ 
+for ( i = 0 ; i < rline  ; ++i )
+    fgets(buf, sizeof(buf), fp);
+printf("%s\n", buf);
+
+//printf("%i",rline);
+
+
+
+//////////
+
+
+if ( ! ( fp2 = fopen("RespuestasBs1y2.txt", "r")) )
+   {
+   printf("\nError al abrir el archivo\n");
+   return(0);
+   }
+   
+for ( i = 0 ; i < rline  ; ++i )
+    fgets(buf, sizeof(buf), fp2);
+printf("%s", buf);
+
+scanf("%i",&resp);
+
+
+if (rline == 1){
+	switch (resp){
+		case 1: printf("Correcto\n");
+				s=1;
+		break;
+		default: printf("Incorrecto\n");
+				s=2;
+	}
+}
+if (rline == 2){
+	switch (resp){
+		case 1: printf("Correcto\n");
+				s=1;
+		break;
+		default: printf("Incorrecto\n");
+				s=2;
+	}
+}
+if (rline == 3){
+	switch (resp){
+		case 1: printf("Correcto\n");
+				s=1;
+		break;
+		default: printf("Incorrecto\n");
+				s=2;
+	
+	}
+}
+if (rline == 4){
+	switch (resp){
+		case 1: printf("Correcto\n");
+				s=1;
+		break;
+		default: printf("incorrecto\n");
+				s=2;
+	}
+}
+if (rline == 5){
+	switch (resp){
+		case 1: printf("Correcto\n");
+				s=1;
+		break;
+		default: printf("Incorrecto\n");
+				s=2;
+	}
+}
+if (rline == 6){
+	switch (resp){
+		case 1: printf("Correcto\n");
+				s=1;
+		break;
+		default: printf("Incorrecto\n");
+				s=2;
+	}
+}
+if (rline == 7){
+	switch (resp){
+		case 1: printf("Correcto\n");
+				s=1;
+		break;
+		default: printf("Incorrecto\n");
+				s=2;
+	}
+}
+if (rline == 8){
+	switch (resp){
+		case 1: printf("Correcto\n");
+				s=1;
+		break;
+		default: printf("Incorrecto\n");
+				s=2;
+	}
+}
+if (rline == 9){
+	switch (resp){
+		case 1: printf("Correcto\n");
+				s=1;
+		break;
+		default: printf("Incorrecto\n");
+				s=2;
+	
+	}
+}
+if (rline == 10){
+	switch (resp){
+		case 1: printf("Correcto\n");
+				s=1;
+		break;
+		default: printf("incorrecto\n");
+				s=2;
+	}
+}
+if (rline == 11){
+	switch (resp){
+		case 1: printf("Correcto\n");
+				s=1;
+		break;
+		default: printf("Incorrecto\n");
+				s=2;
+	}
+}
+if (rline == 12){
+	switch (resp){
+		case 1: printf("Correcto\n");
+				s=1;
+		break;
+		default: printf("Incorrecto\n");
+				s=2;
+	}
+}
+
+//printf("\n%i",s);
+
+
+
+getchar();
+	return (s);
 }
