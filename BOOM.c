@@ -28,31 +28,7 @@ int main ()
 						
 						faseinicial ();
 	
-						printf ( "BOMBA BONUS:\nINSTRUCCIONES: %s elije un tema teniendo en cuenta que:\n.1 pertenece a DEPORTES.\n.2 pertenece a HISTORIA\n.3 iremos incluyendo mas.\n Posteriormente, selecciona las 5 respuestas correctas.\n", name_1);
-
-							do
-							{
-							printf("Introduce una opcion entre las propuestas.\n");
-							scanf (" %c", &tema); // En este caso la bomba bonus sería para conseguir 15segundos extra para la bomba final. Una vez juguemos esta, el dinero que llevemos hasta entonces estaría asegurado//
-							}
-							while (tema!='1' && tema!='2' && tema!='3');
-			
-								switch (tema)
-								{
-								case '1': 
-									printf ("DEPORTES\n");
-								break;
-							
-								case '2':
-									printf ("HISTORIA\n");
-								break;
-							
-								case '3':
-									printf ("IREMOS INTRODUCIENDO MAS\n");
-								break;
-				
-								}
-		
+					
 						printf ("BOMBA FINAL.\n"); //Consiste en contestar durante un minuto(sin contar si se ha conseguido bonus) preguntas de dos opciones. Cada acierto será un +300, cada error -100//
 						printf ( "BOMBA PARA EL BOTE\n");
 							break;
@@ -71,58 +47,6 @@ int main ()
 							printf (" PRIMERA PARTE DEL JUEGO PARA EL JUGADOR 2:\nINSTRUCCIONES: %s corta el cable de todas las respuestas excepto de la que creas que es la correcta.\n ", name_2);
 							
 							faseinicial();
-							
-							printf ( "BOMBA BONUS PARA JUGADOR 1:\nINSTRUCCIONES: %s elije un tema teniendo en cuenta que:\n.1 pertenece a DEPORTES.\n.2 pertenece a HISTORIA\n.3 iremos incluyendo mas.\n Posteriormente, selecciona las 5 respuestas correctas.\n", name_1);
-			
-								do
-								{
-									printf("Introduce una opcion entre las propuestas.\n");
-									scanf (" %c", &tema); // En este caso la bomba bonus sería para conseguir 15segundos extra para la bomba final. Una vez juguemos esta, el dinero que llevemos hasta entonces estaría asegurado//
-								}
-			
-								while (tema!='1' && tema!='2' && tema!='3');
-		
-									switch (tema)
-									{
-										case '1': 
-										printf ("DEPORTES\n");
-										break;
-									
-										case '2':
-											printf ("HISTORIA\n");
-										break;
-									
-										case '3':
-											printf ("IREMOS INTRODUCIENDO MAS\n");
-										break;
-								
-									}
-			
-							printf ( "BOMBA BONUS PARA JUGADOR 2:\nINSTRUCCIONES: %s elije un tema teniendo en cuenta que:\n.1 pertenece a DEPORTES.\n.2 pertenece a HISTORIA\n.3 iremos incluyendo mas.\n Posteriormente, selecciona las 5 respuestas correctas.\n", name_2);
-			
-								do
-								{
-									printf("Introduce una opcion entre las propuestas.\n");
-									scanf (" %c", &tema); // En este caso la bomba bonus sería para conseguir 15segundos extra para la bomba final. Una vez juguemos esta, el dinero que llevemos hasta entonces estaría asegurado//
-								}
-								
-								while (tema!='1' && tema!='2' && tema!='3');
-								
-									switch (tema)
-									{
-										case '1': 
-											printf ("DEPORTES\n");
-										break;
-									
-										case '2':
-											printf ("HISTORIA\n");
-										break;
-									
-										case '3':
-											printf ("IREMOS INTRODUCIENDO MAS\n");
-										break;
-									
-									}
 		
 			
 							printf ("BOMBA FINAL PARA %s\n", name_1);
