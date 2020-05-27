@@ -229,7 +229,7 @@ if (rline == 1){
 }
 if (rline == 2){
 	switch (resp){
-		case 1: printf("Correcto\n");
+		case 3: printf("Correcto\n");
 				s=1;
 		break;
 		default: printf("Incorrecto\n");
@@ -248,7 +248,7 @@ if (rline == 3){
 }
 if (rline == 4){
 	switch (resp){
-		case 1: printf("Correcto\n");
+		case 2: printf("Correcto\n");
 				s=1;
 		break;
 		default: printf("incorrecto\n");
@@ -257,7 +257,7 @@ if (rline == 4){
 }
 if (rline == 5){
 	switch (resp){
-		case 1: printf("Correcto\n");
+		case 3: printf("Correcto\n");
 				s=1;
 		break;
 		default: printf("Incorrecto\n");
@@ -266,7 +266,7 @@ if (rline == 5){
 }
 if (rline == 6){
 	switch (resp){
-		case 1: printf("Correcto\n");
+		case 3: printf("Correcto\n");
 				s=1;
 		break;
 		default: printf("Incorrecto\n");
@@ -284,7 +284,7 @@ if (rline == 7){
 }
 if (rline == 8){
 	switch (resp){
-		case 1: printf("Correcto\n");
+		case 2: printf("Correcto\n");
 				s=1;
 		break;
 		default: printf("Incorrecto\n");
@@ -293,7 +293,7 @@ if (rline == 8){
 }
 if (rline == 9){
 	switch (resp){
-		case 1: printf("Correcto\n");
+		case 3: printf("Correcto\n");
 				s=1;
 		break;
 		default: printf("Incorrecto\n");
@@ -312,7 +312,7 @@ if (rline == 10){
 }
 if (rline == 11){
 	switch (resp){
-		case 1: printf("Correcto\n");
+		case 2: printf("Correcto\n");
 				s=1;
 		break;
 		default: printf("Incorrecto\n");
