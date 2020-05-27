@@ -366,7 +366,7 @@ if ( flines == 0 )
    printf("El archivo esta vacio\n");
    }
  
-rline = rand() % (flines);
+rline = rand() % (flines+1);
  
 rewind(fp3);
  
@@ -482,7 +482,7 @@ if (rline == 10){
 		case 2: printf("Correcto\n");
 				s=1;
 		break;
-		default: printf("incorrecto\n");
+		default: printf("Incorrecto\n");
 				s=2;
 	}
 }
@@ -580,7 +580,7 @@ if ( flines == 0 )
    printf("El archivo esta vacio\n");
    }
  
-rline = rand() % (flines);
+rline = rand() % (flines+1);
  
 rewind(fp5);
  
@@ -641,7 +641,7 @@ if (rline == 4){
 		case 3: printf("Correcto\n");
 				s=1;
 		break;
-		default: printf("incorrecto\n");
+		default: printf("Incorrecto\n");
 				s=2;
 	}
 }
