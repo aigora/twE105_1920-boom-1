@@ -190,7 +190,7 @@ if ( flines == 0 )
    printf("El archivo esta vacio\n");
    }
  
-rline = rand() % (flines);
+rline = rand() % (flines+1);
  
 rewind(fp);
  
