@@ -106,12 +106,15 @@ int main ()
 						printf ("BOMBA FINAL.\n"); //Consiste en contestar durante un minuto(sin contar si se ha conseguido bonus) preguntas de dos opciones. Cada acierto será un +300, cada error -100//
 						
 						for(t=0;t<=9;t++){
-							PyRfinal ();
+							PyRbonus ();
 						}
-						
+						dinero_1=acumuladorBB(dinero_1,var,s);
+						printf("Llevas acumulado %d\n", dinero_1);
 						printf ( "BOMBA PARA EL BOTE\n");
 						
-						
+						for(t=0;t<=9;t++){
+							PyRfinal ();
+						}
 						
 						fprintf(datos,"%s", persona.nombre);
   						fprintf(datos,"%s", persona.apellidos);
