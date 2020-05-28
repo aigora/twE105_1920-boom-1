@@ -1383,4 +1383,8 @@ if (rline == 35){
 		default: printf("Incorrecto\n");
 				s=2;
 		}
-		}
+}
+
+getchar();
+	return (s);
+}
