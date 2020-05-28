@@ -26,7 +26,8 @@ int main ()
 	
 	FILE *datos;
 	datos = fopen("datospartida.txt", "w");
-	char option,name_1[20],name_2[20],dinero_1,dinero_2;
+	char option,name_1[20],name_2[20];
+	int var,s,dinero_1,dinero_2;
     int tema;
     int t;
     ficha persona;
@@ -52,9 +53,54 @@ int main ()
   					scanf("%i",&persona.edad);
 					
 						printf (" PRIMERA PARTE DEL JUEGO\nINSTRUCCIONES: %s corta el cable de todas las respuestas exceto de la que creas que es la correcta.\n ", persona.nombre);
+								
+							printf ("Primera bomba\n");
+								
+								printf("Juegas por 300 euros\n\n");
+								dinero_1=0;
+								var=300;			
+									//temporizador1 ();
+									
+									PyR1 ();
+									dinero_1=acumulador(dinero_1,var,s);
+									printf("Actualmente tienes %d euros \n", dinero_1);			
+									system("pause");
+									
+												
+							printf("Segunda bomba\n");
+								
+								printf("Juegas por 400 euros\n\n");
+								var=400;				
+									//temporizador1 ();
+									PyR1 ();
+									dinero_1=acumulador(dinero_1,var,s);
+									printf("Actualmente tienes %d euros \n", dinero_1);			
+									system("pause");
+									
+												
+							printf("Tercera bomba\n");
+								
+								printf("Juegas por 500 euros\n\n");
+								var=500;				
+									//temporizador1 ();
+									PyR34 ();
+									dinero_1=acumulador(dinero_1,var,s);
+									printf("Actualmente tienes %d euros \n", dinero_1);			
+									system("pause");
+									
+												
+							printf("Cuarta bomba\n");
+							var=600;	
+								printf("Juegas por 600 euros\n\n");
+													
+									//temporizador1 ();
+									PyR34 ();
+									dinero_1=acumulador(dinero_1,var,s);
+									printf("Actualmente tienes %d euros \n", dinero_1);				
+									system("pause");
+						break;			
+		
 						
-						
-						faseinicial ();
 	
 					
 						printf ("BOMBA FINAL.\n"); //Consiste en contestar durante un minuto(sin contar si se ha conseguido bonus) preguntas de dos opciones. Cada acierto será un +300, cada error -100//
@@ -71,7 +117,7 @@ int main ()
   						fprintf(datos,"%s", persona.apellidos);
   						fprintf(datos, "%i\n", persona.edad);
  						fprintf(datos, "%i\n", persona.dObtenido);
-							break;
+					break;
 	
 	
 				case '2': // CASO MULTIJUGADOR. Se trata de dos grupos, pero dando una única solución por grupo.//
@@ -114,7 +160,7 @@ int main ()
 							
 								
 														printf("BOMBA PARA EL BOTE.\n");//como he dicho solo la jugará el que más dinero haya conseguido hasta la bomba anterior.Consistirá en contestar 10 preguntas a lo largo de 2 minutos//
-	
+				break;
 				default:
 					printf ("Hasta pronto.\n");
 					break;
