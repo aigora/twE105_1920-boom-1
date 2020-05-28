@@ -1,38 +1,36 @@
-Confirming
-Factoring
-Sociedad Cooperativa
-Sociedad Laboral
-Mozart
-Beethoven
-7
-6
-Platano
-Aguacate
-Rayo
-Relámpago
-Rio Congo
-Rio Zambebe
-Austria
-Australia
-Amadeo de Saboya
-Alfonso XIII
-Crerbro
-Cerebelo
-El lobo de Wall Street
-El Gran Gatsby
-Blanco
-Negro
-Usain Bolt
-Yohan Blake
-Azov
-Negro
-El Capitán Alatriste
-El Capitán Pescanova
-Arquitectura
-Teatro
-Platón
-Aristóteles
-Janet Gaynor
-Renée Zellweger
-Donald Trump
-Joe Biden
+Confirming(1) Factoring(2)
+Sociedad Cooperativa(1) Sociedad Laboral(2)
+Beethoven(1) Mozart(2)
+6(1) 7(2)
+Platano(1) Aguacate(2)
+Rayo(1) Relámpago(2)
+Rio Zambebe(1) Rio Congo(2)
+Australia(1) Austria(2)
+Amadeo de Saboya(1) Alfonso XIII(2)
+Cerebro(1) Cerebelo(2)
+El Gran Gatsby(1) El lobo de Wall Street(2)
+Negro(1) Blanco(2)
+Usain Bolt(1) Yohan Blake(2)
+Azov(1) Negro(2)
+El Capitán Pescanova(1) El Capitán Alatriste(2)
+Teatro(1) Arquitectura(2)
+Platón(1) Aristóteles(2)
+Janet Gaynor(1) Renée Zellweger(2)
+Donald Trump(1) Joe Biden(2)
+5(1) 6(2)
+Peru(1) India(2)
+Oveja(1) Cabra(2)
+1000(1) 10000(2)
+Si(1) No(2)
+Agua dulce(1) Agua salada(2)
+Punto(1) Coma(2)
+Un año(1) Dos años(2)
+Si(1) No(2)
+Los rayos X(1) Anestesia(2)
+Tratado de Lisboa(1) Tratado de Oporto(2)
+5(1) 6(2)
+Lebrina(1) Lebrato(2)
+Masculino(1) Femenino(2)
+Ave(1) Reptil(2)
+2(1) 3(2)
+Agua(1) Alcohol(2)
