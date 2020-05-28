@@ -118,7 +118,7 @@ printf ("FASE INICIAL\n");
 		
 	printf ("Primera bomba\n");
 		
-		printf("Juegas por 300 euros\n");
+		printf("Juegas por 300 euros\n\n");
 						
 			//temporizador1 ();
 			
@@ -129,7 +129,7 @@ printf ("FASE INICIAL\n");
 						
 	printf("Segunda bomba\n");
 		
-		printf("Juegas por 400 euros\n");
+		printf("Juegas por 400 euros\n\n");
 						
 			//temporizador1 ();
 			PyR1 ();
@@ -139,7 +139,7 @@ printf ("FASE INICIAL\n");
 						
 	printf("Tercera bomba\n");
 		
-		printf("Juegas por 500 euros\n");
+		printf("Juegas por 500 euros\n\n");
 						
 			//temporizador1 ();
 			PyR34 ();
@@ -149,7 +149,7 @@ printf ("FASE INICIAL\n");
 						
 	printf("Cuarta bomba\n");
 		
-		printf("Juegas por 600 euros\n");
+		printf("Juegas por 600 euros\n\n");
 							
 			//temporizador1 ();
 			PyR34 ();
