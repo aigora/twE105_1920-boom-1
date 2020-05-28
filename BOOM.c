@@ -6,16 +6,15 @@ int PyR1 ();
 int PyR34 ();
 int PyRfinal ();
 int PyRbonus ();
-
+int acumulador (int dinero_1, int var,int s);
 
 int main ()
 {
 	
 	
-	char option,name_1[20],name_2[20],dinero_1,dinero_2;
-    int tema;
+	char option,name_1[20],name_2[20],dinero_1,dinero_2,var;
+    int tema, s;
     int t;
-    
 		printf ("Bienvenido a BOOM!!\n Elige la modalidad a la que deseas jugar teniendo en cuenta que:\n -si pulsas 1 jugaras en modo individual.\n -si pulsas 2 jugaras en modo multijugador.\n -pulsa cualquier otra tecla para salir del juego\n");
 		scanf ("%c", &option);
 		
@@ -113,7 +112,7 @@ int temporizador1 (){
 
 //////////////
 
-int faseinicial (){
+int faseinicial (int var,int dinero_1, int s){
 	
 	
 printf ("FASE INICIAL\n");
@@ -121,28 +120,28 @@ printf ("FASE INICIAL\n");
 	printf ("Primera bomba\n");
 		
 		printf("Juegas por 300 euros\n\n");
-						
+		var=300;				
 			//temporizador1 ();
 			
 			PyR1 ();
-						
+			dinero_1=acumulador(dinero_1,var,s);
+			printf("Llevas acumulado %d\n", dinero_1);			
 			system("pause");
 			
 						
 	printf("Segunda bomba\n");
 		
 		printf("Juegas por 400 euros\n\n");
-						
+		var=400;				
 			//temporizador1 ();
-			PyR1 ();
-						
+			PyR1 ();			
 			system("pause");
 			
 						
 	printf("Tercera bomba\n");
-		
+	
 		printf("Juegas por 500 euros\n\n");
-						
+		var=500;				
 			//temporizador1 ();
 			PyR34 ();
 						
@@ -152,7 +151,7 @@ printf ("FASE INICIAL\n");
 	printf("Cuarta bomba\n");
 		
 		printf("Juegas por 600 euros\n\n");
-							
+		var=600;					
 			//temporizador1 ();
 			PyR34 ();
 							
@@ -1384,3 +1383,15 @@ if (rline == 35){
 				s=2;
 		}
 		}
+		
+
+//funcion que nos va a hacer de acumulador de dinero//
+int acumulador (int dinero_1, int var,int s)
+{
+	if (s==1)
+      	dinero_1=dinero_1+var;
+    else
+      	dinero_1=dinero_1;
+      	
+    return dinero_1;
+}
