@@ -6,7 +6,7 @@ int PyR1 ();
 int PyR34 ();
 int PyRfinal ();
 int PyRbonus ();
-
+int acumulador ();
 
 int main ()
 {
@@ -1387,4 +1387,15 @@ if (rline == 35){
 
 getchar();
 	return (s);
+}
+
+
+int acumulador (int dinero_1, int var,int s)
+{
+	if (s==1)
+      	dinero_1=dinero_1+var;
+    else
+      	dinero_1=dinero_1;
+      	
+    return dinero_1;
 }
