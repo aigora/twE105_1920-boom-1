@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "Libreriafunciones.h"
 
 /*int temporizador1 ();
@@ -9,13 +10,26 @@ int PyRfinal ();
 int PyRbonus ();
 int acumulador ();*/
 
+
+
+typedef struct {
+  char nombre[50];
+  char apellidos[50];
+  int edad;
+  int dObtenido;
+} ficha;
+
+
+
 int main ()
 {
 	
-	
+	FILE *datos;
+	datos = fopen("datospartida.txt", "w");
 	char option,name_1[20],name_2[20],dinero_1,dinero_2;
     int tema;
     int t;
+    ficha persona;
     
 		printf ("Bienvenido a BOOM!!\n Elige la modalidad a la que deseas jugar teniendo en cuenta que:\n -si pulsas 1 jugaras en modo individual.\n -si pulsas 2 jugaras en modo multijugador.\n -pulsa cualquier otra tecla para salir del juego\n");
 		scanf ("%c", &option);
@@ -24,9 +38,20 @@ int main ()
 			{
 				case '1': // CASO INDIVIDUAL. El juego será de un único jugador, o grupo, dando una única solución//
 					
-					printf ("Has elegido el modo individual, escribe tu nombre.\n");
-					scanf ("%s", &name_1);
-						printf (" PRIMERA PARTE DEL JUEGO\nINSTRUCCIONES: %s corta el cable de todas las respuestas exceto de la que creas que es la correcta.\n ", name_1);
+					
+					printf ("Has elegido el modo individual, A continuacion, recopilaremos tus datos.\n");
+					printf("Nombre:");
+					fflush(stdin);
+					fgets(persona.nombre,50,stdin);
+					//scanf ("%s", &name_1);
+					
+					fflush (stdin);
+  					printf("Apellidos:");
+  					fgets(persona.apellidos,50,stdin);
+  					printf("Edad:");
+  					scanf("%i",&persona.edad);
+					
+						printf (" PRIMERA PARTE DEL JUEGO\nINSTRUCCIONES: %s corta el cable de todas las respuestas exceto de la que creas que es la correcta.\n ", persona.nombre);
 						
 						
 						faseinicial ();
@@ -39,6 +64,13 @@ int main ()
 						}
 						
 						printf ( "BOMBA PARA EL BOTE\n");
+						
+						
+						
+						fprintf(datos,"%s", persona.nombre);
+  						fprintf(datos,"%s", persona.apellidos);
+  						fprintf(datos, "%i\n", persona.edad);
+ 						fprintf(datos, "%i\n", persona.dObtenido);
 							break;
 	
 	
