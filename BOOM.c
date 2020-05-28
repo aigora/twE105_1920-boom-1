@@ -328,6 +328,80 @@ if (rline == 12){
 				s=2;
 	}
 }
+if (rline == 13){
+	switch (resp){
+		case 1: printf("Correcto\n");
+				s=1;
+		break;
+		default: printf("incorrecto\n");
+				s=2;
+	}
+}
+if (rline == 14){
+	switch (resp){
+		case 2: printf("Correcto\n");
+				s=1;
+		break;
+		default: printf("Incorrecto\n");
+				s=2;
+	}
+}
+if (rline == 15){
+	switch (resp){
+		case 3: printf("Correcto\n");
+				s=1;
+		break;
+		default: printf("Incorrecto\n");
+				s=2;
+	}
+}
+if (rline == 16){
+	switch (resp){
+		case 2: printf("Correcto\n");
+				s=1;
+		break;
+		default: printf("Incorrecto\n");
+				s=2;
+	}
+}
+if (rline == 17){
+	switch (resp){
+		case 3: printf("Correcto\n");
+				s=1;
+		break;
+		default: printf("Incorrecto\n");
+				s=2;
+	}
+}
+if (rline == 18){
+	switch (resp){
+		case 1: printf("Correcto\n");
+				s=1;
+		break;
+		default: printf("Incorrecto\n");
+				s=2;
+	
+	}
+}
+if (rline == 19){
+	switch (resp){
+		case 2: printf("Correcto\n");
+				s=1;
+		break;
+		default: printf("incorrecto\n");
+				s=2;
+	}
+}
+if (rline == 20){
+	switch (resp){
+		case 2: printf("Correcto\n");
+				s=1;
+		break;
+		default: printf("Incorrecto\n");
+				s=2;
+	}
+}
+
 
 //printf("\n%i",s);
 
@@ -541,6 +615,43 @@ if (rline == 16){
 				s=2;
 	}
 }
+if (rline == 17){
+	switch (resp){
+		case 1: printf("Correcto\n");
+				s=1;
+		break;
+		default: printf("Incorrecto\n");
+				s=2;
+	
+	}
+}
+if (rline == 18){
+	switch (resp){
+		case 2: printf("Correcto\n");
+				s=1;
+		break;
+		default: printf("incorrecto\n");
+				s=2;
+	}
+}
+if (rline == 19){
+	switch (resp){
+		case 3: printf("Correcto\n");
+				s=1;
+		break;
+		default: printf("Incorrecto\n");
+				s=2;
+	}
+}
+if (rline == 20){
+	switch (resp){
+		case 1: printf("Correcto\n");
+				s=1;
+		break;
+		default: printf("Incorrecto\n");
+				s=2;
+	}
+}
 
 //printf("\n%i",s);
 
@@ -738,6 +849,145 @@ if (rline == 14){
 	}
 }
 if (rline == 15){
+	switch (resp){
+		case 2: printf("Correcto\n");
+				s=1;
+		break;
+		default: printf("Incorrecto\n");
+				s=2;
+	}
+}
+
+if (rline == 16){
+	switch (resp){
+		case 3: printf("Correcto\n");
+				s=1;
+		break;
+		default: printf("Incorrecto\n");
+				s=2;
+	}
+}
+if (rline == 17){
+	switch (resp){
+		case 1: printf("Correcto\n");
+				s=1;
+		break;
+		default: printf("Incorrecto\n");
+				s=2;
+	}
+}
+if (rline == 18){
+	switch (resp){
+		case 2: printf("Correcto\n");
+				s=1;
+		break;
+		default: printf("Incorrecto\n");
+				s=2;
+	
+	}
+}
+if (rline == 19){
+	switch (resp){
+		case 1: printf("Correcto\n");
+				s=1;
+		break;
+		default: printf("Incorrecto\n");
+				s=2;
+	}
+}
+if (rline == 20){
+	switch (resp){
+		case 1: printf("Correcto\n");
+				s=1;
+		break;
+		default: printf("Incorrecto\n");
+				s=2;
+	}
+}
+if (rline == 21){
+	switch (resp){
+		case 4: printf("Correcto\n");
+				s=1;
+		break;
+		default: printf("Incorrecto\n");
+				s=2;
+	}
+}
+if (rline == 22){
+	switch (resp){
+		case 3: printf("Correcto\n");
+				s=1;
+		break;
+		default: printf("Incorrecto\n");
+				s=2;
+	}
+}
+if (rline == 23){
+	switch (resp){
+		case 2: printf("Correcto\n");
+				s=1;
+		break;
+		default: printf("Incorrecto\n");
+				s=2;
+	}
+}
+if (rline == 24){
+	switch (resp){
+		case 1: printf("Correcto\n");
+				s=1;
+		break;
+		default: printf("Incorrecto\n");
+				s=2;
+	
+	}
+}
+if (rline == 25){
+	switch (resp){
+		case 1: printf("Correcto\n");
+				s=1;
+		break;
+		default: printf("incorrecto\n");
+				s=2;
+	}
+}
+if (rline == 26){
+	switch (resp){
+		case 3: printf("Correcto\n");
+				s=1;
+		break;
+		default: printf("Incorrecto\n");
+				s=2;
+	}
+}
+if (rline == 27){
+	switch (resp){
+		case 4: printf("Correcto\n");
+				s=1;
+		break;
+		default: printf("Incorrecto\n");
+				s=2;
+	}
+}
+if (rline == 28){
+	switch (resp){
+		case 2: printf("Correcto\n");
+				s=1;
+		break;
+		default: printf("Incorrecto\n");
+				s=2;
+	
+	}
+}
+if (rline == 29){
+	switch (resp){
+		case 4: printf("Correcto\n");
+				s=1;
+		break;
+		default: printf("incorrecto\n");
+				s=2;
+	}
+}
+if (rline == 30){
 	switch (resp){
 		case 2: printf("Correcto\n");
 				s=1;
