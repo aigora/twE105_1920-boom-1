@@ -30,8 +30,8 @@ int main ()
 	int var,s,dinero_1,dinero_2, bote;
     int tema;
     int t;
-    ficha persona;
-    
+    ficha persona1;
+    ficha persona2;
 		printf ("Bienvenido a BOOM!!\n Elige la modalidad a la que deseas jugar teniendo en cuenta que:\n -si pulsas 1 jugaras en modo individual.\n -si pulsas 2 jugaras en modo multijugador.\n -pulsa cualquier otra tecla para salir del juego\n");
 		scanf ("%c", &option);
 		
@@ -43,16 +43,15 @@ int main ()
 					printf ("Has elegido el modo individual, A continuacion, recopilaremos tus datos.\n");
 					printf("Nombre:");
 					fflush(stdin);
-					fgets(persona.nombre,50,stdin);
-					//scanf ("%s", &name_1);
+					fgets(persona1.nombre,50,stdin);
 					
 					fflush (stdin);
   					printf("Apellidos:");
-  					fgets(persona.apellidos,50,stdin);
+  					fgets(persona1.apellidos,50,stdin);
   					printf("Edad:");
-  					scanf("%i",&persona.edad);
+  					scanf("%i",&persona1.edad);
 					
-						printf (" PRIMERA PARTE DEL JUEGO\nINSTRUCCIONES: %s corta el cable de todas las respuestas exceto de la que creas que es la correcta.\n ", persona.nombre);
+						printf (" PRIMERA PARTE DEL JUEGO\nINSTRUCCIONES: %s corta el cable de la respuestas que creas que es la correcta.\n ", persona1.nombre);
 								
 							printf ("Primera bomba\n");
 								
@@ -102,48 +101,145 @@ int main ()
 						
 	
 					
-						printf ("BOMBA FINAL.\n"); //Consiste en contestar durante un minuto(sin contar si se ha conseguido bonus) preguntas de dos opciones. Cada acierto será un +300, cada error -100//
+						printf ("BOMBA BONUS.\n"); //Consiste en contestar 5 preguntas de dos opciones. Cada acierto será un +200, cada error -100//
 						
 						for(t=0;t<=9;t++){
 							PyRbonus ();
 						}
 						dinero_1=acumuladorBB(dinero_1,var,s);
 						printf("Llevas acumulado %d\n", dinero_1);
-						printf ( "BOMBA PARA EL BOTE\n");
-						bote=1000000;
+						printf ( "BOMBA FINAL. ¡¡¡¡A POR EL BOTE!!!!\n");
+						bote=100000;
 						for(t=0;t<=9;t++){
 							PyRfinal ();
 						}
 						
-						fprintf(datos,"%s", persona.nombre);
-  						fprintf(datos,"%s", persona.apellidos);
-  						fprintf(datos, "%i\n", persona.edad);
- 						fprintf(datos, "%i\n", persona.dObtenido);
+						fprintf(datos,"%s", persona1.nombre);
+  						fprintf(datos,"%s", persona1.apellidos);
+  						fprintf(datos, "%i\n", persona1.edad);
+ 						fprintf(datos, "%i\n", persona1.dObtenido);
 					break;
 	
 	
 				case '2': // CASO MULTIJUGADOR. Se trata de dos grupos, pero dando una única solución por grupo.//
 			
-					printf ("Has elegido el modo multijugador. Por favor introduce el nombre del jugador 1.\n");
-					scanf ("%s",&name_1);
-						printf ("Ahora introduce el nombre del jugador 2.\n");
-						scanf ("%s", &name_2 );
-							printf (" PRIMERA PARTE DEL JUEGO PARA EL JUGADOR 1:\nINSTRUCCIONES: %s corta el cable de todas las respuestas excepto de la que creas que es la correcta.\n ", name_1);
+					printf ("Has elegido el modo multijugador. A continuación recogeremos los datos del jugador 1.\n");
+						printf("Nombre:");
+						fflush(stdin);
+						fgets(persona1.nombre,50,stdin);
+						
+						fflush (stdin);
+	  					printf("Apellidos:");
+	  					fgets(persona1.apellidos,50,stdin);
+	  					printf("Edad:");
+	  					scanf("%i",&persona1.edad);
+					printf ("Ahora recogeremos los datos del jugador 2.\n");
+						printf("Nombre:");
+						fflush(stdin);
+						fgets(persona2.nombre,50,stdin);
 							
-							faseinicial();
+						fflush (stdin);
+		  				printf("Apellidos:");
+		  				fgets(persona2.apellidos,50,stdin);
+		  				printf("Edad:");
+		  				scanf("%i",&persona2.edad);
+								
+							printf (" PRIMERA PARTE DEL JUEGO PARA JUGADOR 1\nINSTRUCCIONES: %s corta el cable de la respuestas que creas que es la correcta.\n ", persona1.nombre);
+								
+							printf ("Primera bomba\n");
+								
+								printf("Juegas por 300 euros\n\n");
+								dinero_1=0;
+								var=300;			
+									//temporizador1 ();
+									
+									PyR1 ();
+									dinero_1=acumulador(dinero_1,var,s);
+									printf("Actualmente tienes %d euros \n", dinero_1);			
+									system("pause");
+									
+												
+							printf("Segunda bomba\n");
+								
+								printf("Juegas por 400 euros\n\n");
+								var=400;				
+									//temporizador1 ();
+									PyR1 ();
+									dinero_1=acumulador(dinero_1,var,s);
+									printf("Actualmente tienes %d euros \n", dinero_1);			
+									system("pause");
+									
+												
+							printf("Tercera bomba\n");
+								
+								printf("Juegas por 500 euros\n\n");
+								var=500;				
+									//temporizador1 ();
+									PyR34 ();
+									dinero_1=acumulador(dinero_1,var,s);
+									printf("Actualmente tienes %d euros \n", dinero_1);			
+									system("pause");
+									
+												
+							printf("Cuarta bomba\n");
+							var=600;	
+								printf("Juegas por 600 euros\n\n");
+													
+									//temporizador1 ();
+									PyR34 ();
+									dinero_1=acumulador(dinero_1,var,s);
+									printf("Actualmente tienes %d euros \n", dinero_1);				
+									system("pause");
 							
-							printf (" PRIMERA PARTE DEL JUEGO PARA EL JUGADOR 2:\nINSTRUCCIONES: %s corta el cable de todas las respuestas excepto de la que creas que es la correcta.\n ", name_2);
+							printf (" PRIMERA PARTE DEL JUEGO PARA EL JUGADOR 2:\nINSTRUCCIONES: %s corta el cable de la respuesta  que creas que es la correcta.\n ", persona2.nombre);
+								printf ("Primera bomba\n");
+									printf("Juegas por 300 euros\n\n");
+									dinero_1=0;
+									var=300;			
+									PyR1 ();
+									dinero_1=acumulador(dinero_1,var,s);
+									printf("Actualmente tienes %d euros \n", dinero_1);			
+									system("pause");
+									
+												
+								printf("Segunda bomba\n");
+								
+									printf("Juegas por 400 euros\n\n");
+									var=400;				
+									//temporizador1 ();
+									PyR1 ();
+									dinero_1=acumulador(dinero_1,var,s);
+									printf("Actualmente tienes %d euros \n", dinero_1);			
+									system("pause");
+									
+												
+								printf("Tercera bomba\n");
+								
+									printf("Juegas por 500 euros\n\n");
+									var=500;				
+									PyR34 ();
+									dinero_1=acumulador(dinero_1,var,s);
+									printf("Actualmente tienes %d euros \n", dinero_1);			
+									system("pause");
+									
+												
+								printf("Cuarta bomba\n");
+									var=600;	
+									printf("Juegas por 600 euros\n\n");
+									PyR34 ();
+									dinero_1=acumulador(dinero_1,var,s);
+									printf("Actualmente tienes %d euros \n", dinero_1);				
+									system("pause");
 							
-							faseinicial();
 		
 			
-							printf ("BOMBA FINAL PARA %s\n", name_1);
+							printf ("BOMBA BONUS PARA %s\n", name_1);
 							
 							for(t=0;t<=9;t++){
 							PyRfinal ();
 							}
 			
-							printf ("BOMBA FINAL PARA %s\n", name_2);
+							printf ("BOMBA BONUS PARA %s\n", name_2);
 							
 							for(t=0;t<=9;t++){
 							PyRfinal ();
@@ -161,7 +257,7 @@ int main ()
 													printf ("Como %s ha obtenido %i y %s ha obtenido %i, pasa a jugar la BOMBA PARA EL BOTE el jugador %s.\n",name_2,dinero_2,name_1,dinero_1,name_2);
 							
 								
-														printf("BOMBA PARA EL BOTE.\n");//como he dicho solo la jugará el que más dinero haya conseguido hasta la bomba anterior.Consistirá en contestar 10 preguntas a lo largo de 2 minutos//
+														printf("BOMBA PARA EL BOTE.\n");//como he dicho solo la jugará el que más dinero haya conseguido hasta la bomba anterior.Consistirá en contestar 10 preguntas. Hay que acertar todas para conseguir el bote
 				break;
 				default:
 					printf ("Hasta pronto.\n");
