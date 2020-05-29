@@ -58,7 +58,7 @@ int main ()
 								printf("Juegas por 300 euros\n\n");
 								dinero_1=0;
 								var=300;			
-									//temporizador1 ();
+									
 									
 									s = PyR1 ();
 									dinero_1=acumulador(dinero_1,var,s);
@@ -70,7 +70,7 @@ int main ()
 								
 								printf("Juegas por 400 euros\n\n");
 								var=400;				
-									//temporizador1 ();
+									
 									s = PyR1 ();
 									dinero_1=acumulador(dinero_1,var,s);
 									printf("Actualmente tienes %d euros \n", dinero_1);			
@@ -81,7 +81,7 @@ int main ()
 								
 								printf("Juegas por 500 euros\n\n");
 								var=500;				
-									//temporizador1 ();
+									
 									s = PyR34 ();
 									dinero_1=acumulador(dinero_1,var,s);
 									printf("Actualmente tienes %d euros \n", dinero_1);			
@@ -92,7 +92,7 @@ int main ()
 							var=600;	
 								printf("Juegas por 600 euros\n\n");
 													
-									//temporizador1 ();
+									
 									s = PyR34 ();
 									dinero_1=acumulador(dinero_1,var,s);
 									printf("Actualmente tienes %d euros \n", dinero_1);				
@@ -105,6 +105,7 @@ int main ()
 						
 						for(t=0;t<=4;t++){
 							s = PyRbonus ();
+							dinero_1=acumuladorBB(dinero_1,var,s);
 						}
 						dinero_1=acumuladorBB(dinero_1,var,s);
 						printf("Llevas acumulado %d\n", dinero_1);
@@ -151,7 +152,7 @@ int main ()
 								printf("Juegas por 300 euros\n\n");
 								dinero_1=0;
 								var=300;			
-									//temporizador1 ();
+									
 									
 									s = PyR1 ();
 									dinero_1=acumulador(dinero_1,var,s);
@@ -163,7 +164,7 @@ int main ()
 								
 								printf("Juegas por 400 euros\n\n");
 								var=400;				
-									//temporizador1 ();
+									
 									s = PyR1 ();
 									dinero_1=acumulador(dinero_1,var,s);
 									printf("Actualmente tienes %d euros \n", dinero_1);			
@@ -174,7 +175,7 @@ int main ()
 								
 								printf("Juegas por 500 euros\n\n");
 								var=500;				
-									//temporizador1 ();
+									
 									s = PyR34 ();
 									dinero_1=acumulador(dinero_1,var,s);
 									printf("Actualmente tienes %d euros \n", dinero_1);			
@@ -185,7 +186,7 @@ int main ()
 							var=600;	
 								printf("Juegas por 600 euros\n\n");
 													
-									//temporizador1 ();
+									
 									s = PyR34 ();
 									dinero_1=acumulador(dinero_1,var,s);
 									printf("Actualmente tienes %d euros \n", dinero_1);				
@@ -206,7 +207,7 @@ int main ()
 								
 									printf("Juegas por 400 euros\n\n");
 									var=400;				
-									//temporizador1 ();
+									
 									s = PyR1 ();
 									dinero_2=acumulador2(dinero_2,var,s);
 									printf("Actualmente tienes %d euros \n", dinero_2);			
@@ -237,12 +238,16 @@ int main ()
 							
 							for(t=0;t<=4;t++){
 							s = PyRbonus ();
+							dinero_2=acumuladorBB2(dinero_2,var,s);
+							printf("Actualmente tienes %d euros \n", dinero_1);
 							}
 			
 							printf ("BOMBA BONUS PARA %s\n", persona2.nombre);
 							
 							for(t=0;t<=4;t++){
 							s = PyRbonus ();
+							dinero_2=acumuladorBB2(dinero_2,var,s);
+							printf("Actualmente tienes %d euros \n", dinero_2);
 							}
 		
 			
