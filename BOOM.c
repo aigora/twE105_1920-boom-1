@@ -113,7 +113,7 @@ int main ()
 						for(t=0;t<=9;t++){
 							PyRfinal ();
 						}
-						
+						persona1.dObtenido=dinero_1;
 						fprintf(datos,"%s", persona1.nombre);
   						fprintf(datos,"%s", persona1.apellidos);
   						fprintf(datos, "%i\n", persona1.edad);
@@ -260,6 +260,17 @@ int main ()
 							printf("BOMBA PARA EL BOTE.\n");//como he dicho solo la jugará el que más dinero haya conseguido hasta la bomba anterior.Consistirá en contestar 10 preguntas. Hay que acertar todas para conseguir el bote
 								for(t=0;t<=9;t++){
 								PyRbonus ();	}
+						persona1.dObtenido=dinero_1;
+						persona2.dObtenido=dinero_2;		
+						fprintf(datos,"%s", persona1.nombre);
+  						fprintf(datos,"%s", persona1.apellidos);
+  						fprintf(datos, "%i\n", persona1.edad);
+ 						fprintf(datos, "%i\n", persona1.dObtenido);
+						fprintf(datos,"%s", persona2.nombre);
+  						fprintf(datos,"%s", persona2.apellidos);
+  						fprintf(datos, "%i\n", persona2.edad);
+ 						fprintf(datos, "%i\n", persona2.dObtenido);					
+												
 												
 				break;
 				default:
