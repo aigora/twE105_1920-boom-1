@@ -1,23 +1,7 @@
 #include "prototipofunc.h"
 
 
-int temporizador1 (){
-	
-	int tiempo;
-	
-	printf("Dispone de 1 minuto.\n\n");
-    
-	for(tiempo=0; tiempo<10; tiempo++){
-        Sleep(1000);
-        printf ("%02i\r",tiempo+1);
-    }
-
-    printf("Se acabo el tiempo\n\n");
-	
-	return 0;
-}
-
-//////////////
+//
 
 int faseinicial (){
 	
