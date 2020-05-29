@@ -255,12 +255,16 @@ int main ()
 							
 							for(t=0;t<=4;t++){
 							s = PyRbonus ();
+							dinero_1=acumuladorBB(dinero_1, var,s);
+							printf("Actualmente tienes %d euros \n", dinero_1);
 							}
 			
 							printf ("BOMBA BONUS PARA %s\n", persona2.nombre);
 							
 							for(t=0;t<=4;t++){
 							s = PyRbonus ();
+							dinero_2=acumuladorBB2(dinero_2, var,s);
+							printf("Actualmente tienes %d euros \n", dinero_2);
 							}
 		
 			
