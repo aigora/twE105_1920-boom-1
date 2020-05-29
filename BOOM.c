@@ -103,7 +103,7 @@ int main ()
 					
 						printf ("BOMBA BONUS.\n"); //Consiste en contestar 5 preguntas de dos opciones. Cada acierto será un +200, cada error -100//
 						
-						for(t=0;t<=9;t++){
+						for(t=0;t<=4;t++){
 							PyRbonus ();
 						}
 						dinero_1=acumuladorBB(dinero_1,var,s);
@@ -233,31 +233,34 @@ int main ()
 							
 		
 			
-							printf ("BOMBA BONUS PARA %s\n", name_1);
+							printf ("BOMBA BONUS PARA %s\n", persona1.nombre);
 							
-							for(t=0;t<=9;t++){
-							PyRfinal ();
+							for(t=0;t<=4;t++){
+							PyRbonus ();
 							}
 			
-							printf ("BOMBA BONUS PARA %s\n", name_2);
+							printf ("BOMBA BONUS PARA %s\n", persona2.nombre);
 							
-							for(t=0;t<=9;t++){
-							PyRfinal ();
+							for(t=0;t<=4;t++){
+							PyRbonus ();
 							}
 		
 			
 			
 								if (dinero_1>dinero_2)
-									printf ("Como %s ha obtenido %i y %s ha obtenido %i, pasa a jugar la BOMBA PARA EL BOTE el jugador %s.\n",name_1,dinero_1,name_2,dinero_2,name_1);
+									printf ("Como %s ha obtenido %i y %s ha obtenido %i, pasa a jugar la BOMBA PARA EL BOTE el jugador %s.\n",persona1.nombre,dinero_1,persona2.nombre,dinero_2,persona1.nombre);
 								
 										else if (dinero_1=dinero_2)
 											printf ("Pregunta de desempate\n");
 								
 												else 
-													printf ("Como %s ha obtenido %i y %s ha obtenido %i, pasa a jugar la BOMBA PARA EL BOTE el jugador %s.\n",name_2,dinero_2,name_1,dinero_1,name_2);
+													printf ("Como %s ha obtenido %i y %s ha obtenido %i, pasa a jugar la BOMBA PARA EL BOTE el jugador %s.\n",persona2.nombre,dinero_2,persona1.nombre,dinero_1,persona2.nombre);
 							
 								
-														printf("BOMBA PARA EL BOTE.\n");//como he dicho solo la jugará el que más dinero haya conseguido hasta la bomba anterior.Consistirá en contestar 10 preguntas. Hay que acertar todas para conseguir el bote
+							printf("BOMBA PARA EL BOTE.\n");//como he dicho solo la jugará el que más dinero haya conseguido hasta la bomba anterior.Consistirá en contestar 10 preguntas. Hay que acertar todas para conseguir el bote
+								for(t=0;t<=9;t++){
+								PyRbonus ();	}
+												
 				break;
 				default:
 					printf ("Hasta pronto.\n");
