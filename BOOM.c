@@ -27,7 +27,7 @@ int main ()
 	FILE *datos;
 	datos = fopen("datospartida.txt", "w");
 	char option,name_1[20],name_2[20];
-	int var,s,dinero_1,dinero_2;
+	int var,s,dinero_1,dinero_2, bote;
     int tema;
     int t;
     ficha persona;
@@ -111,7 +111,7 @@ int main ()
 						dinero_1=acumuladorBB(dinero_1,var,s);
 						printf("Llevas acumulado %d\n", dinero_1);
 						printf ( "BOMBA PARA EL BOTE\n");
-						
+						bote=1000000;
 						for(t=0;t<=9;t++){
 							PyRfinal ();
 						}
