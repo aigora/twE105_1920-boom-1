@@ -1238,6 +1238,16 @@ int acumulador (int dinero_1, int var,int s)
     return dinero_1;
 }
 
+int acumulador2 (int dinero_2, int var,int s)
+{
+	if (s==1)
+      	dinero_2=dinero_2+var;
+    else
+      	dinero_2=dinero_2;
+      	
+    return dinero_2;
+}
+
 //FUNCION QUE ACUMULA EL DINERO OBTENIDO EN LA BOMBA BONUS//
 int acumuladorBB (int dinero_1, int var,int s)
 {
@@ -1248,4 +1258,15 @@ int acumuladorBB (int dinero_1, int var,int s)
       	
     return dinero_1;
 }
+
+int acumuladorBB2 (int dinero_2, int var,int s)
+{
+	if (s==1)
+      	dinero_2=dinero_2+200;
+    else
+      	dinero_2=dinero_2-100;
+      	
+    return dinero_2;
+}
+
 

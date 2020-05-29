@@ -194,11 +194,11 @@ int main ()
 							printf (" PRIMERA PARTE DEL JUEGO PARA EL JUGADOR 2:\nINSTRUCCIONES: %s corta el cable de la respuesta  que creas que es la correcta.\n ", persona2.nombre);
 								printf ("Primera bomba\n");
 									printf("Juegas por 300 euros\n\n");
-									dinero_1=0;
+									dinero_2=0;
 									var=300;			
 									s = PyR1 ();
-									dinero_1=acumulador(dinero_1,var,s);
-									printf("Actualmente tienes %d euros \n", dinero_1);			
+									dinero_2=acumulador2(dinero_2,var,s);
+									printf("Actualmente tienes %d euros \n", dinero_2);			
 									system("pause");
 									
 												
@@ -208,8 +208,8 @@ int main ()
 									var=400;				
 									//temporizador1 ();
 									s = PyR1 ();
-									dinero_1=acumulador(dinero_1,var,s);
-									printf("Actualmente tienes %d euros \n", dinero_1);			
+									dinero_2=acumulador2(dinero_2,var,s);
+									printf("Actualmente tienes %d euros \n", dinero_2);			
 									system("pause");
 									
 												
@@ -218,8 +218,8 @@ int main ()
 									printf("Juegas por 500 euros\n\n");
 									var=500;				
 									s = PyR34 ();
-									dinero_1=acumulador(dinero_1,var,s);
-									printf("Actualmente tienes %d euros \n", dinero_1);			
+									dinero_2=acumulador2(dinero_2,var,s);
+									printf("Actualmente tienes %d euros \n", dinero_2);			
 									system("pause");
 									
 												
@@ -227,8 +227,8 @@ int main ()
 									var=600;	
 									printf("Juegas por 600 euros\n\n");
 									s = PyR34 ();
-									dinero_1=acumulador(dinero_1,var,s);
-									printf("Actualmente tienes %d euros \n", dinero_1);				
+									dinero_2=acumulador2(dinero_2,var,s);
+									printf("Actualmente tienes %d euros \n", dinero_2);				
 									system("pause");
 							
 		
