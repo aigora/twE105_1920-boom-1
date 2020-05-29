@@ -326,7 +326,7 @@ int main ()
 					
 										}
 										else
-											printf ("Pregunta de desempate\n");
+											printf ("Como %s y %s habeis obtenido el mismo dinero no optais a la Bomba Bote, ambos os llevais %i euros\n",persona1.nombre,persona2.nombre,dinero_1);
 								
 												
 							

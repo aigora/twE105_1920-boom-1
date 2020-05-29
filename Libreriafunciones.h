@@ -1270,3 +1270,4 @@ int acumuladorBB2 (int dinero_2, int var,int s)
 }
 
 
+
