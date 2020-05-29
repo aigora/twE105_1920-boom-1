@@ -1,60 +1,8 @@
 #include "prototipofunc.h"
 
 
+
 //
-
-int faseinicial (){
-	
-	
-printf ("FASE INICIAL\n");
-		
-	printf ("Primera bomba\n");
-		
-		printf("Juegas por 300 euros\n\n");
-						
-			//temporizador1 ();
-			
-			PyR1 ();
-						
-			system("pause");
-			
-						
-	printf("Segunda bomba\n");
-		
-		printf("Juegas por 400 euros\n\n");
-						
-			//temporizador1 ();
-			PyR1 ();
-						
-			system("pause");
-			
-						
-	printf("Tercera bomba\n");
-		
-		printf("Juegas por 500 euros\n\n");
-						
-			//temporizador1 ();
-			PyR34 ();
-						
-			system("pause");
-			
-						
-	printf("Cuarta bomba\n");
-		
-		printf("Juegas por 600 euros\n\n");
-							
-			//temporizador1 ();
-			PyR34 ();
-							
-			system("pause");
-			
-	
-
-return 0;
-}
-
-
-//////////////
 
 
 int PyR1 (){
