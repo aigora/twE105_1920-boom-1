@@ -269,19 +269,70 @@ int main ()
 		
 			
 			
-								if (dinero_1>dinero_2)
-									printf ("Como %s ha obtenido %i y %s ha obtenido %i, pasa a jugar la BOMBA PARA EL BOTE el jugador %s.\n",persona1.nombre,dinero_1,persona2.nombre,dinero_2,persona1.nombre);
+								if (dinero_1>dinero_2){
 								
-										else if (dinero_1=dinero_2)
+									printf ("Como %s ha obtenido %i y %s ha obtenido %i, pasa a jugar la BOMBA PARA EL BOTE el jugador %s.\n",persona1.nombre,dinero_1,persona2.nombre,dinero_2,persona1.nombre);
+									printf("BOMBA PARA EL BOTE.\n");//como he dicho solo la jugará el que más dinero haya conseguido hasta la bomba anterior.Consistirá en contestar 10 preguntas. Hay que acertar todas para conseguir el bote
+									bote=100000;
+									n=0;
+									for(t=0;t<=9;t++){
+						 				s=PyRfinal ();
+						 			n+=s;
+									if (s!=1){
+									break;
+									}
+									}
+
+									if (n!=10){
+									dinero_1=dinero_1;
+									printf ("BOOM,te has equivocado y te ha estallado la bomba. Te llevas unicamente lo acumulado hasta ahora que son %i euros.\n", dinero_1);							
+									printf("Gracias por participar, juega de nuevo cuando quieras.\n");
+									}
+									else {
+						   			 dinero_1=dinero_1+bote;
+									printf ("!!!!ENHORABUENA¡¡¡¡");
+									printf ("TE LLEVAS EL BOTE, Y EL DINERO TOTAL QUE HAS OBYENIDO ES NI MAS NI MENOS QUE... %i EUROS.\n",dinero_1);
+									persona1.dObtenido=dinero_1;
+									}
+									
+										}	
+										
+										
+										else if (dinero_1<dinero_2){
+										
+													printf ("Como %s ha obtenido %i y %s ha obtenido %i, pasa a jugar la BOMBA PARA EL BOTE el jugador %s.\n",persona2.nombre,dinero_2,persona1.nombre,dinero_1,persona2.nombre);
+										bote=100000;
+										n=0;
+										for(t=0;t<=9;t++){
+						 					s=PyRfinal ();
+						 				n+=s;
+										if (s!=1){
+										break;
+										}
+										}
+
+										if (n!=10){
+										dinero_2=dinero_2;
+										printf ("BOOM,te has equivocado y te ha estallado la bomba. Te llevas unicamente lo acumulado hasta ahora que son %i euros.\n", dinero_2);							
+										printf("Gracias por participar, juega de nuevo cuando quieras.\n");
+										}
+										else {
+						   			 	dinero_2=dinero_2+bote;
+										printf ("!!!!ENHORABUENA¡¡¡¡");
+										printf ("TE LLEVAS EL BOTE, Y EL DINERO TOTAL QUE HAS OBYENIDO ES NI MAS NI MENOS QUE... %i EUROS.\n",dinero_2);
+									
+										}
+										persona2.dObtenido=dinero_2;
+					
+										}
+										else
 											printf ("Pregunta de desempate\n");
 								
-												else 
-													printf ("Como %s ha obtenido %i y %s ha obtenido %i, pasa a jugar la BOMBA PARA EL BOTE el jugador %s.\n",persona2.nombre,dinero_2,persona1.nombre,dinero_1,persona2.nombre);
+												
 							
 								
-							printf("BOMBA PARA EL BOTE.\n");//como he dicho solo la jugará el que más dinero haya conseguido hasta la bomba anterior.Consistirá en contestar 10 preguntas. Hay que acertar todas para conseguir el bote
-								for(t=0;t<=9;t++){
-								PyRbonus ();	}
+							
+								
 						persona1.dObtenido=dinero_1;
 						persona2.dObtenido=dinero_2;		
 						fprintf(datos,"%s", persona1.nombre);
