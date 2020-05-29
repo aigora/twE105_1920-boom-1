@@ -30,6 +30,7 @@ int main ()
 	int var,s,dinero_1,dinero_2, bote;
     int tema;
     int t;
+    int n;
     ficha persona1;
     ficha persona2;
 		printf ("Bienvenido a BOOM!!\n Elige la modalidad a la que deseas jugar teniendo en cuenta que:\n -si pulsas 1 jugaras en modo individual.\n -si pulsas 2 jugaras en modo multijugador.\n -pulsa cualquier otra tecla para salir del juego\n");
@@ -110,8 +111,25 @@ int main ()
 						printf("Llevas acumulado %d\n", dinero_1);
 						printf ( "BOMBA FINAL. 　　A POR EL BOTE!!!!\n");
 						bote=100000;
+						n=0;
 						for(t=0;t<=9;t++){
-							s = PyRfinal ();
+						 s=PyRfinal ();
+						 n+=s;
+						if (s!=1){
+							break;
+						}
+						}
+
+						if (n!=10){
+							dinero_1=dinero_1;
+							printf ("BOOM,te has equivocado y te ha estallado la bomba. Te llevas unicamente lo acumulado hasta ahora que son %i euros.\n", dinero_1);							
+							printf("Gracias por participar, juega de nuevo cuando quieras.\n");
+						}
+						else {
+						    dinero_1=dinero_1+bote;
+							printf ("!!!!ENHORABUENA　　");
+							printf ("TE LLEVAS EL BOTE, Y EL DINERO TOTAL QUE HAS OBYENIDO ES NI MAS NI MENOS QUE... %i EUROS.\n",dinero_1);
+									
 						}
 						persona1.dObtenido=dinero_1;
 						fprintf(datos,"%s", persona1.nombre);
