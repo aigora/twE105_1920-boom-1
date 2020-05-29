@@ -97,8 +97,7 @@ int main ()
 									PyR34 ();
 									dinero_1=acumulador(dinero_1,var,s);
 									printf("Actualmente tienes %d euros \n", dinero_1);				
-									system("pause");
-						break;			
+									system("pause");			
 		
 						
 	
