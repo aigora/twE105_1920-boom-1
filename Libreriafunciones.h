@@ -1295,7 +1295,7 @@ getchar();
 	return (s);
 }
 
-
+//FUNCION QUE ACUMULA EL DINERO OBTENIDO EN LA FASE INICIAL//
 int acumulador (int dinero_1, int var,int s)
 {
 	if (s==1)
@@ -1305,3 +1305,15 @@ int acumulador (int dinero_1, int var,int s)
       	
     return dinero_1;
 }
+
+//FUNCION QUE ACUMULA EL DINERO OBTENIDO EN LA BOMBA BONUS//
+int acumuladorBB (int dinero_1, int var,int s)
+{
+	if (s==1)
+      	dinero_1=dinero_1+200;
+    else
+      	dinero_1=dinero_1-100;
+      	
+    return dinero_1;
+}
+
