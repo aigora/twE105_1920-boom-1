@@ -52,7 +52,7 @@ int main ()
   					printf("Edad:");
   					scanf("%i",&persona1.edad);
 					
-						printf (" PRIMERA PARTE DEL JUEGO\nINSTRUCCIONES: %s corta el cable de la respuestas que creas que es la correcta.\n ", persona1.nombre);
+						printf (" PRIMERA PARTE DEL JUEGO\nINSTRUCCIONES: %s selecciona la respuesta correcta.\n ", persona1.nombre);
 								
 							printf ("Primera bomba\n");
 								
@@ -162,7 +162,7 @@ int main ()
 		  				printf("Edad:");
 		  				scanf("%i",&persona2.edad);
 								
-							printf (" PRIMERA PARTE DEL JUEGO PARA JUGADOR 1\nINSTRUCCIONES: %s corta el cable de la respuestas que creas que es la correcta.\n ", persona1.nombre);
+							printf (" PRIMERA PARTE DEL JUEGO PARA JUGADOR 1\nINSTRUCCIONES: %s selecciona la respuesta correcta.\n ", persona1.nombre);
 								
 							printf ("Primera bomba\n");
 								
@@ -209,7 +209,7 @@ int main ()
 									printf("Actualmente tienes %d euros \n", dinero_1);				
 									system("pause");
 							
-							printf (" PRIMERA PARTE DEL JUEGO PARA EL JUGADOR 2:\nINSTRUCCIONES: %s corta el cable de la respuesta  que creas que es la correcta.\n ", persona2.nombre);
+							printf (" PRIMERA PARTE DEL JUEGO PARA EL JUGADOR 2:\nINSTRUCCIONES: %s selecciona la respuesta correcta correcta.\n ", persona2.nombre);
 								printf ("Primera bomba\n");
 									printf("Juegas por 300 euros\n\n");
 									dinero_2=0;
